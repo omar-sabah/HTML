@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Learn Form">
+    <title>learn every think about Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nomalize.css">
+    <!-- نعمل سكربت خاص بالجافا سكربت فيه دالة تقول (Hello HTML) -->
+    <script>
+    function SayHello(){
+      alert("Hello HTML");
+    }
+    </script>
+
+  </head>
+  <body>
+      <!-- يوجد لكل فورم عدة اتربيوتس خواص وهي كالتالي
+      name : "نضع اسم الفورم للتحكم فيها من خلال السي اسس"
+      action : "وفيها نضع اسم الصفحة التي ستتجه اليها معلومات الفورم"
+      method : "ونضع فيها نوع الدالة التى تتعامل معها الفورم set or post" -->
+    <!-- <form name="register" action="index.html" method="post"> -->
+    <form name="register">
+
+        <!-- لكتابة العناوين نستخدم ليبل  -->
+        <label>User Name</label>
+        <!-- لعمل تيكست بوكس نستخدم انبوت وفي حقل التايب نضع تيكست -->
+        <input type="text" name="user" maxlength="10" >
+        <br>
+        <label>Password</label>
+        <input type="password  " name="password" placeholder="Enter your password">
+        <br>
+        <!-- لادراج الملاحظات او ارسال الرسائل نستخدم هذا الوسم  -->
+        <textarea name="textarea1" rows="8" cols="40">This is our textarea</textarea>
+        <br>
+        <!-- واذا اردنا جعل التكست ايريا للقراءة فقط بدون كتابة نستخدم خاصية القراءة -->
+        <textarea name="textarea1" rows="8" cols="40" readonly>This is our textarea</textarea>
+        <br>
+        <!-- اذا اردنا ان نجعلها غير فعالة وعن طريق الجافا سكربت عبر الضغط على زر تتفعل -->
+        <textarea name="textarea1" rows="8" cols="40" disabled>This is our textarea</textarea>
+        <br>
+        <!-- لتحميل فايل من الحاسبة الى الموقع نستخدم  -->
+        <label>Upload you CV</label>
+        <input type="file" name="loadFile">
+        <br>
+        <input type="checkbox" name="remember_me">
+        <label>Remember me</label>
+        <br>
+        <!-- من هنا وطالع سوف نتعامل مع الانبوت التي تتعامل مع البرمجة -->
+        <input type="submit" value="SignUp">
+        <input type="button" name="Say Hello" value="Say Hello" onclick="SayHello()">
+        <!-- لتفريغ جميع المدخلات التي قمنا بها سابقا نستخدم الريسيت -->
+        <input type="reset" name="reset" value="Reset defult">
+        <br>
+        <!--  يستخدم عندما نريد التعليم على صورة لتعطينا احداثيات محددة بالصورة يستخدم للتعليم على الخرائط-->
+        <input type="image" src="image/stevejobs.jpg" width="300" height="400"alt="map">
+        <!-- لاضافة حقل ادخال مخفي لا تراه بالموقع يرسل بيانات مخفية لقاعدة البيانات او اي مكان
+        اخر يستخدم للاغراض البرمجة في السيرفر سايد -->
+        <input type="hidden" value="testing">
+        <br>
+        <label>choose your browser</label><br>
+        <input type="radio" name="browser" value="chroome">google chroome <br>
+        <input type="radio" name="browser" value="firefox">mozilla firefox <br>
+        <input type="radio" name="browser" value="explorer">internet explorer <br>
+        <!-- لتحزيم الفورم داخل اطار نستخدم -->
+        <fieldset class="fieldset1">
+        <!-- لوضع عنوان للاطار نستخدم التاك -->
+        <!-- لتنسيق المحتوى انظر الى ملف الستايل -->
+        <legend>Register</legend>
+        <label>User Name</label>
+        <input type="text" name="user" maxlength="10" >
+        <label>Password</label>
+        <input type="password  " name="password" placeholder="Enter your password">
+        <input class="login" type="submit" name="login" value="Login">
+        <a href="#">SignUP</a>
+        <a href="#">forgot My password</a>
+
+      </fieldset>
+
+      <!-- عمل قائمة اختيار عناصر مثل الكومبوبوكس اسمها سلكت بوكس  -->
+      <!-- توجد عدة خواص لقائمة السيليكت  -->
+      <!-- disabled : لايقاف عمل السلكت او الاوبشن -->
+      <!-- siz : لاظهار عدد الايتمز التي يمكن ان اختارها 1 او 2 او 3 -->
+      <!-- multiple :  لاختيار اكثر من عنصر بنفس الوقت من القائمة مع الضعظ على مفتاح الكونترول-->
+      <select name="time">
+        <!-- لاضافة العناصر الى القائمة  -->
+        <!-- option: تحتوي على معظم خواص السيليكت مضاف اليها خواص اخرى وكما يلي -->
+        <!-- selected : لجعل العنصر يتصدر القائمة ويكون هو الاختيارالديفلت ويتم التعامل معها
+          بالجافا سكربت مثلا عندما يقوم الشخص باختيار ذكر مثلا يتم اختيار عنصر من القائمة
+           بشكل اوتوماتيكي-->
+        <!-- value: وتحتوي على القيمة التي ترسل للداتابيس في حالة اختيار العنصر -->
+        <!-- عندما نرغب بتقسيم عناصر القائمة الى مجموعات تحمل كل مجمعة عنوان معين
+        optgroup : نستخدم العنصر ونضع بداخله العناصر  -->
+          <optgroup label="Near Time" disabled>
+            <option value="1">Now</option>
+            <option value="2">Tomoro</option>
+            <option value="3">After a week</option>
+          </optgroup>
+          <optgroup label="Far Time">
+            <option value="4">Year</option>
+            <option value="5">After 2 month</option>
+            <option value="6">After 10 Year</option>
+          </optgroup>
+
+      </select>
+    </form>
+
+  </body>
+</html>

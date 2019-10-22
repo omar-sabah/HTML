@@ -1,0 +1,18 @@
+fieldset,input{
+  display: block;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+fieldset{
+border: 1px solid #CCC;
+background: #EDEDED;
+width: 300px;
+}
+legend {
+  border: 1px solid #DDD;
+  background: #FFF;
+  padding: 8px;
+}
+.Login{
+  display: inline;
+}

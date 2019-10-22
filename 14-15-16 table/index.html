@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="learn Tables in HTML ">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nomalize.css">
+    <title>Tables lesson 14</title>
+  </head>
+  <body>
+     <table class="table1" >     <!--للتعبير عن خلق جدول جديد -->
+       <caption>This is My web skills </caption>  <!--عنوان الجدول ويجب ان يكون موقعها بعد وسم خلق الجدول -->
+       <th>Date</th>
+       <th>HTML</th>
+       <th>CSS</th>
+       <th>Javascript</th>
+       <th>PHP</th>
+       <!-- ------انتهى وصف رؤوس الاعمدة للجدول------- -->
+
+       <!-- <tr> </tr> -----لاضافة صف بالجدول------
+       <td></td>  -----لاضافة خلية بالصف داخل الجدول ----- -->
+       <tr>
+         <td>October</td>
+         <td>50%</td>
+         <td>60%</td>
+         <td>70%</td>
+         <td>80%</td>
+       </tr>
+       <tr>
+         <td>November</td>
+         <td>55%</td>
+         <td>70%</td>
+         <td>75%</td>
+         <td>90%</td>
+       </tr>
+       <tr>
+         <td>November</td>
+         <td>75%</td>
+         <td>80%</td>
+         <td>85%</td>
+         <td>95%</td>
+       </tr>
+     </table>
+
+     <!-- تقسيم الجدول الى ثلاثة اجزاء الهيدر والبودي والفوتر
+     من فوائد هذه الطريقة حتى لو قدمنا اواخرنا الاجزاء عن بعض لا يتأثر
+     الترتيب بسبب اننا نقوم بترتيب الجدول عن طريق السي اس اس -->
+    <table class="table2">
+        <caption>This is Our Hosting Plans</caption>
+        <thead>
+          <tr>
+            <td class="table_head">Plan1</td>
+            <td class="table_head">Plan2</td>
+            <td class="table_head">Plan3</td>
+            <td class="table_head">Plan4</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table_body">Hard Disk 30GB</td>
+            <td class="table_body">Hard Disk 40GB</td>
+            <td class="table_body">Hard Disk 50GB</td>
+            <td class="table_body">Hard Disk 60GB</td>
+          </tr>
+          <tr>
+            <td class="table_body">5 Databases</td>
+            <td class="table_body">6 Databases</td>
+            <td class="table_body">7 Databases</td>
+            <td class="table_body">8 Databases</td>
+          </tr>
+          <tr>
+            <td class="table_body">3 ftb</td>
+            <td class="table_body">4 ftb</td>
+            <td class="table_body">5 ftb</td>
+            <td class="table_body">6 ftb</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>50$</td>
+            <td>60$</td>
+            <td>70$</td>
+            <td>80$</td>
+          </tr>
+        </tfoot>
+    </table>
+<!-- دمج اعمدة الجدول (colspan) -->
+  <table class="table3">
+      <caption>learn how to do colspan</caption>
+      <tr>
+        <td colspan="2">Programing</td>
+        <td colspan="3">Design</td>
+      </tr>
+      <tr>
+        <td >php</td>
+        <td >Mysql</td>
+        <td >HTML</td>
+        <td >CSS</td>
+        <td >Javascript</td>
+      </tr>
+  </table>
+
+<!-- طريقة دمج صفوف الجدول (Rowspan) -->
+    <table class="table4">
+        <caption>learn how to do colspan</caption>
+        <tr>
+          <th >Name</th>
+          <th >Email</th>
+        </tr>
+        <tr>
+          <td rowspan="2">Omar</td>
+          <td >omar1@gmail.com</td>
+        </tr>
+        <tr>
+          <td >omar1@gmail.com</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Ali</td>
+          <td >ali1@gmail.com</td>
+        </tr>
+        <tr>
+          <td >ali2@yahoo.com</td>
+        </tr>
+        <tr>
+          <td >ali3@gmail.com</td>
+        </tr>
+    </table>
+
+  </body>
+</html>

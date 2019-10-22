@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Design Form Page">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nomalize.css">
+    <title>تصميم صفحة تحتوي على فورم</title>
+  </head>
+  <body>
+      <form name="register">
+        <fieldset>
+          <legend>Personal information</legend>
+          <label>User name</label>
+          <input type="text" name="username">
+          <label>Password</label>
+          <input type="password" name="password">
+          <label>E-mail</label>
+          <input type="email" name="email">
+          <label>Gander</label>
+          <select name="gander">
+            <option value="1">Male</option>
+            <option value="2">Fmale</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>You favourits</legend>
+          <label>Your Favourit Text Editor</label>
+          <input type="radio" name="editor" value="1">Komodo Editor <br>
+          <input type="radio" name="editor" value="2">Netbeans <br>
+          <input type="radio" name="editor" value="3">Sublime Text
+          <hr>
+          <label>Your Favourit Text Browser</label>
+          <input type="radio" name="browser" value="1">google chroome <br>
+          <input type="radio" name="browser" value="2">Mozilla firfox <br>
+          <input type="radio" name="browser" value="3">Oper
+          <hr>
+          <label>Your Favourit Text Operating System</label>
+          <input type="checkbox" name="os" value="1">Windows <br>
+          <input type="checkbox" name="os" value="2">Linux firfox <br>
+          <input type="checkbox" name="os" value="3">Mac
+        </fieldset>
+        <fieldset>
+          <legend>Your Message</legend>
+          <textarea name="yourms"></textarea>
+          <input type="submit" name="message" value="Your Data">
+        </fieldset>
+      </form>
+  </body>
+</html>

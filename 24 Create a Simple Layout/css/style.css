@@ -1,0 +1,46 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial,Tahoma,sans-serif;
+}
+.header{
+  background: #333;
+  color: #FFF;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 0;
+}
+.navigation{
+  background: #DDD;
+  color: #676767;
+  text-align: center;
+}
+ul,ol{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+ul li {
+  display: inline-block;
+  padding: 10px;
+}
+li:hover{
+  color: #FFF;
+}
+.content{
+  text-align: center;
+  /* لاضافة مسافة فقط من فقط من الاعلى والاسفل وترك الجوانب نكتب */
+  padding:20px 0;
+}
+.footer{
+  background: #333;
+  color: #FFF;
+  text-align: center;
+  padding: 10px 0;
+}
+ol{
+  display: inline-block;
+}
+ol li{
+  display: inline-block;
+}

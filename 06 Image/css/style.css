@@ -1,0 +1,30 @@
+body{
+  background-color: ;
+}
+
+.container{
+  width: 1170px;
+  margin: auto;
+}
+
+ .image1 img {
+  display: inline;
+  float: right;
+}
+.image2{
+  margin-top: 150px;
+}
+.image2 img {
+ display: inline;
+ float: left;
+ padding-right: 10px;
+}
+
+.image3{
+  margin-top: 150px;
+}
+.image3 img {
+ display: inline;
+ float:inherit;
+ padding: 10px;
+}

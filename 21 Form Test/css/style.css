@@ -1,0 +1,34 @@
+body{
+  background: #EFEFEF;
+  font-family:Arial,Tahoma,sans-serif;
+}
+fieldset{
+  background: #FFF;
+  border:1px solid #CCC;
+  padding: 20px;
+  /* margin-bottom: 20px; */
+  /* لجلب الفورم بوسط الصفحة نعم التالي */
+  width: 500px;
+  margin: 20px auto;
+}
+legend{
+  background: #FFF;
+  border: 1px solid #CCC;
+  padding:5px;
+}
+label{ margin-bottom: 5px; display:block; }
+input{
+  margin-bottom:10px;
+}
+input[type="text"],input[type="password"],input[type="email"],textarea{
+display: block;
+padding: 8px;
+width: 300px;
+}
+hr{
+  border: 1px solid #EEE;
+}
+textarea{
+  height: 200px;
+  margin-bottom: 10px;
+}
